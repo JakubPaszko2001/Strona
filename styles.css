@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+header {
+    width: 100%;
+    height: 10vh;
+    background: #3b3b3b;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+section {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    /* background: green; */
+}
+ul {
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+}
+ul li {
+    display: inline-block;
+    margin: 30px;
+
+}
+.nawigacja li a  {
+    font-weight: 600;
+}
+ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 14vh;
+    text-transform: uppercase;
+    color: white;
+
+}
+.napis {
+    width: 100%;
+    height: 30vh;
+    /* background: yellow; */
+    justify-content: center;
+    text-align: center;
+
+}
+h1 {
+    font-size: 150px;
+    line-height: 30vh;
+    color: #3b3b3b;
+    font-family: 'Raleway', sans-serif;
+}
+.tablet {
+    width: 50%;
+    height: 50vh;
+    /* background: black; */
+    text-align: center;
+}
+.tekst {
+    position: relative;
+    height: 390px;
+    top: 53px;
+    outline: 0;
+    border: none;
+    background: black;
+    color: white;
+    width: 260px;
+}
+.textarea {
+    /* background: yellow; */
+    width: 50%;
+    text-align: center;
+    top: 30vh;
+    height: 40vh;
+    position: absolute;
+}
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+.logo {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 30vh;
+    line-height: 30vh;
+
+}
+.logo-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 0;
+    /* padding: 100px 0; */
+}
+.logo-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.contact {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* background: black; */
+}
+.input {
+    width: 700px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    color: black;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.wyslij {
+    background: transparent;
+    color: black;
+    font-size: 20px;
+    width: 700px;
+}
+.wyslij:hover {
+    cursor: pointer;
+}
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 130px;
+    }
+    .textarea {
+        width: 100%;
+    }
+    .tablet {
+        width: 100%;
+    }
+    .logo-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 850px) {
+    h1 {
+        font-size: 110px;
+    }
+}
+@media (max-width: 730px) {
+    .input {
+        width: 600px;
+    }
+    .wyslij {
+        width: 600px;
+    }
+    h1 {
+        font-size: 90px;
+    }
+    ul li {
+        margin: 15px;
+    }
+}
+@media (max-width: 670px) {
+    ul li {
+        margin: 10px;
+    }
+    .input {
+        width: 500px;
+    }
+    .wyslij {
+        width: 500px;
+    }
+}
+@media (max-width: 580px) {
+    h1 {
+        font-size: 70px;
+    }
+    ul li {
+        margin: 5px;
+    }
+    .input {
+        width: 400px;
+    }
+    .wyslij {
+        width: 400px;
+    }
+}
+@media (max-width: 500px) {
+    .tablet1 {
+        width: 400px;
+        height: 400px;
+    }
+    .tekst {
+        width: 200px;
+        height: 300px;
+    }
+    ul {
+        display: none;
+    }
+}
+@media (max-width: 450px) {
+    h1 {
+        font-size: 60px;
+    }
+    .input {
+        width: 300px;
+    }
+    .wyslij {
+        width: 300px;
+    }
+}
+@media (max-width: 450px) {
+    .tablet1 {
+        width: 350px;
+        height: 350px;
+    }
+    .tekst {
+        width: 200px;
+        height: 270px;
+        top: 40px;
+    }
+}
+@media (max-width: 386px) {
+    h1 {
+        font-size: 50px;
+    }
+    .tablet1 {
+        width: 300px;
+        height: 300px;
+    }
+    .tekst {
+        width: 168px;
+        height: 230px;
+        top: 40px;
+    }
+}
+@media (max-width: 320px) {
+    h1 {
+        font-size: 40px;
+    }
+    .input {
+        width: 200px;
+    }
+    .wyslij {
+        width: 200px;
+    }
+}
+@media (max-height: 685px) {
+    .tablet1 {
+        transform: rotate(90deg);
+    }
+    .tekst {
+        width: 350px;
+        height: 260px;
+        top: 90px;
+    }
+    img.tablet1 {
+        height: 450px;
+        width: 450px;
+    }
+    img.tlo2 {
+        width: 40px;
+        height: 40px;
+    }
+}
+@media (max-height: 560px) {
+    .tablet1 {
+        transform: rotate(90deg);
+    }
+    .tekst {
+        width: 270px;
+        height: 200px;
+        top: 70px;
+    }
+    img.tablet1 {
+        height: 350px;
+        width: 350px;
+    }
+    img.tlo2 {
+        width: 30px;
+        height: 30px;
+    }
+    .contact {
+        height: 70vh;
+    }
+
+}
+@media (max-height: 390px) {
+    .tablet1 {
+        transform: rotate(90deg);
+    }
+    .tekst {
+        width: 240px;
+        height: 170px;
+        top: 60px;
+    }
+    img.tablet1 {
+        height: 300px;
+        width: 300px;
+    }
+    img.tlo2 {
+        width: 20px;
+        height: 20px;
+    }
+    .contact {
+        height: 100vh;
+    }
+}
+@media (max-height: 325px) {
+    .tablet1 {
+        transform: rotate(90deg);
+    }
+    .tekst {
+        width: 200px;
+        height: 140px;
+        top: 55px;
+    }
+    img.tablet1 {
+        height: 250px;
+        width: 250px;
+    }
+}

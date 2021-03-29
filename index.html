@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="tlo2.png" sizes="32x32">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <img class="tlo2" src="tlo2.png" alt="logo" width="50px" height="50px">
+        <ul>
+            <li><a href="#logo">LOGO</a></li>
+            <li><a href="#wizytowki">WIZYTÓWKI</a></li>
+            <li><a href="#plakaty">PLAKATY</a></li>
+            <li><a href="#kontakt">KONTAKT</a></li>
+        </ul>
+    </header>
+    <section>
+        <div class="napis">
+            <h1>PORTFOLIO</h1>
+        </div>
+        <div class="animacja">
+
+        </div>
+        <div class="tablet">
+            <img class="tablet1" src="tablet.png" alt="tablet">
+        </div>
+        <div class="textarea">
+        <textarea class="tekst" type="text">Witam na mojej stronie.&#13;&#10;Jestem grafikiem freelancerem chętnie zajmę sie twoim zleceniem i wykonam je jak najlepiej się da.&#13;&#10;&#13;&#10;Wykonuje:&#13;&#10;-Logo&#13;&#10;-Ulotki&#13;&#10;-Banery&#13;&#10;-Wizytówki&#13;&#10;-Strony WWW&#13;&#10;-Ilustracje wektorowe&#13;&#10;-Inne&#13;&#10;&#13;&#10;Pracuje na Ipad Pro który obsługuje programy takie jak Affinity Designer i Affinity Photo.</textarea>
+        </div>
+    </section>
+    <div class="slider">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="wilk.png" alt=""></div>
+              <!-- <div class="swiper-slide"><img src="123123.png" alt=""></div> -->
+              <div class="swiper-slide"><img src="131313.png" alt=""></div>
+              <div class="swiper-slide"><img src="baran.png" alt=""></div>
+              <div class="swiper-slide"><img src="makaron.png" alt=""></div>
+              <div class="swiper-slide"><img src="piano.png" alt=""></div>
+              <!-- <div class="swiper-slide"><img src="bocian300.png" alt=""></div> -->
+              <div class="swiper-slide"><img src="donut300.png" alt=""></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+          <script>
+              var swiper = new Swiper('.swiper-container', {
+                effect: 'coverflow',
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                coverflowEffect: {
+                  rotate: 0,
+                  stretch: 0,
+                  depth: 50,
+                  modifier: 1,
+                  slideShadows: false,
+                },
+                pagination: {
+                  el: '.swiper-pagination',
+                },
+                loop: true,
+                autoplay: {
+                    delay: 1500,
+                    disableOnInteraction: false,
+                },
+              });
+            </script>
+    </div>
+    <div id="logo" class="logo">
+        <h1>LOGO</h1>
+    </div>
+    <div class="logo-grid">
+        <div class="grid-item1"><img src="baranduzy.png" alt=""></div>
+        <div class="grid-item2"><img src="pianopiano.png" alt=""></div>
+        <div class="grid-item3"><img src="donutduzy.png" alt=""></div>
+        <div class="grid-item4"><img src="makaronyduzy.png" alt=""></div>
+        <!-- <div class="grid-item5"><img src="drinkduzy.png" alt=""></div> -->
+        <div class="grid-item6"><img src="plytaduza.png" alt=""></div>
+        <!-- <div class="grid-item7"><img src="bocianduzy.png" alt=""></div> -->
+        <div class="grid-item8"><img src="wilkduzy.png" alt=""></div>
+        <div class="grid-item9"><img src="siostryduze.png" alt=""></div>
+    </div>
+    <div id="wizytowki" class="logo">
+        <h1>WIZYTÓWKI</h1>
+    </div>
+    <div class="logo-grid">
+        <div class="grid-item1"><img src="gitara.png" alt=""></div>
+        <div class="grid-item2"><img src="barber.png" alt=""></div>
+        <div class="grid-item2"><img src="gitara.png" alt=""></div>
+    </div>
+    <div id="plakaty" class="logo">
+        <h1>PLAKATY</h1>
+    </div>
+    <div class="logo-grid">
+        <div class="grid-item1"><img src="halloweenduzy.png" alt=""></div>
+        <div class="grid-item2"><img src="kawaduzy.png" alt=""></div>
+        <div class="grid-item3"><img src="pokotduzy.png" alt=""></div>
+    </div>
+    <div id="kontakt" class="logo">
+        <h1>KONTAKT</h1>
+    </div>
+    <div class="contact">
+        <form method="post" action="skrypt.php">
+            <input name="imie" type="text" class="input" placeholder="Imie i Nazwisko" required>
+            <br>
+            <input name="email" type="text" class="input" placeholder="E-mail" required>
+            <br>
+            <textarea name="wiadomosc" class="input" placeholder="Wiadomość" rows="4" required></textarea>
+            <br>
+            <input type="submit" class="wyslij" name="submit" value="Wyślij">
+        </form>
+    </div>
+</body>
+</html>
